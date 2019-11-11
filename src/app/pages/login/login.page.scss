@@ -1,0 +1,20 @@
+ion-content{
+    --background: black;
+}
+.container-top{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 75%;
+    margin: 0 auto;
+    top: 10%;
+    z-index: 2;
+}
+ion-slides{
+    height: 100%;
+    .slider-inner{
+        background-color: aqua;
+        color: darkblue;
+    }
+    
+}

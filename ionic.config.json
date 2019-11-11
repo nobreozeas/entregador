@@ -1,5 +1,7 @@
 {
   "name": "entregador",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
