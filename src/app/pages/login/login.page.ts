@@ -3,6 +3,7 @@ import { IonSlides, LoadingController, ToastController } from '@ionic/angular';
 import { User } from 'src/app/interfaces/user';
 import { AuthService } from 'src/app/services/auth.service';
 import { Keyboard } from '@ionic-native/keyboard/ngx';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,12 +15,14 @@ export class LoginPage implements OnInit {
   public userLogin: User = {};
   public userRegister: User = {};
   private loading: any;
+  
 
   constructor(
     private authService: AuthService,
     private loadingCtrl: LoadingController,
     private toastCtrl: ToastController,
-    public keyboard: Keyboard
+    public keyboard: Keyboard,
+    private router: Router
   ) { }
 
   ngOnInit() { }
@@ -38,6 +41,7 @@ export class LoginPage implements OnInit {
 
     try {
       await this.authService.login(this.userLogin);
+      this.router.navigate(["home"]);
     } catch (error) {
       this.presentToast(error.message);
     } finally {

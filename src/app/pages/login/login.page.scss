@@ -1,6 +1,4 @@
-ion-content{
-    --background: black;
-}
+
 .container-top{
     position: absolute;
     left: 0;
@@ -13,7 +11,7 @@ ion-content{
 ion-slides{
     height: 100%;
     .slider-inner{
-        background-color: aqua;
+        --background-color: aqua;
         color: darkblue;
     }
     
