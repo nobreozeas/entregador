@@ -38,10 +38,9 @@ export class LoginPage implements OnInit {
 
   async login() {
     await this.presentLoading();
-
     try {
       await this.authService.login(this.userLogin);
-      this.router.navigate(["home"]);
+      this.router.navigate(["tabs/pedidos"]);
     } catch (error) {
       this.presentToast(error.message);
     } finally {
