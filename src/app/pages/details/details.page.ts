@@ -62,7 +62,7 @@ export class DetailsPage implements OnInit {
       }
 
     }else{
-      this.pedidos.createdAt = new Date().getDate();
+      this.pedidos.createdAt = new Date().getTime();
 
       try{
         await this.pedidoService.addPedido(this.pedidos);

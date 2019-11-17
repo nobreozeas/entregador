@@ -27,6 +27,10 @@ const routes: Routes = [
       {
         path: "my-account",
         loadChildren: "../my-account/my-account.module#MyAccountPageModule"
+      },
+      { 
+        path: 'maps',
+        loadChildren: '../maps/maps.module#MapsPageModule' 
       }
     ]
   },
