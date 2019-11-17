@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule', canActivate: [LoggedGuard] },
   { path: 'tabs', loadChildren: './pages/tabs/tabs.module#TabsPageModule', canActivate: [AuthGuard] },
+  //{ path: 'details', loadChildren: './pages/details/details.module#DetailsPageModule' },
   //{ path: 'pedidos', loadChildren: './pages/pedidos/pedidos.module#PedidosPageModule' }
   
 ];

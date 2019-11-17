@@ -16,9 +16,13 @@ const routes: Routes = [
         path: 'pedidos',
         loadChildren: '../pedidos/pedidos.module#PedidosPageModule'
       },
-      {
-        path: 'pedidos/:id',
-        loadChildren: '../pedidos/pedidos.module#PedidosPageModule'
+      { 
+        path: 'details',
+        loadChildren: '../details/details.module#DetailsPageModule' 
+      },
+      { 
+        path: 'details/:id',
+        loadChildren: '../details/details.module#DetailsPageModule' 
       },
       {
         path: "my-account",
