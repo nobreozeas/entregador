@@ -100,4 +100,5 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^4.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="~2.0.5" />
     <plugin name="cordova-plugin-advanced-http" spec="~2.2.0" />
+    <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyALCJXankTYxT4a4r9OX28727SM1QXL_cY" />
 </widget>

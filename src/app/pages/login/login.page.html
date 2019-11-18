@@ -23,7 +23,7 @@
         <ion-item class="ion-margin-top" lines="none">
           <ion-input [type]="tipo ? 'text' : 'password'" placeholder="Senha" [(ngModel)]="userLogin.password"></ion-input>
           <ion-button color="light" size="medium" (click)="btnPassword()" item-right>
-            <ion-icon  [name]="tipo ? 'md-eye-off' : 'md-eye'"></ion-icon>
+            <ion-icon slot="icon-only" [name]="tipo ? 'md-eye-off' : 'md-eye'"></ion-icon>
           </ion-button>
         </ion-item>
 
@@ -46,9 +46,9 @@
         </ion-item>
 
         <ion-item class="ion-margin-top" lines="none">
-          <ion-input [type]="tipo ? 'text' : 'password'" placeholder="Senha" [(ngModel)]="userLogin.password"></ion-input>
+          <ion-input [type]="tipo ? 'text' : 'password'" placeholder="Senha" [(ngModel)]="userRegister.password"></ion-input>
           <ion-button color="light" size="medium" (click)="btnPassword()" item-right>
-            <ion-icon  [name]="tipo ? 'md-eye-off' : 'md-eye'"></ion-icon>
+            <ion-icon slot="icon-only"  [name]="tipo ? 'md-eye-off' : 'md-eye'"></ion-icon>
           </ion-button>
         </ion-item>
 
