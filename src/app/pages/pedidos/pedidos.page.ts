@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs';
 import { PedidosService } from 'src/app/services/pedidos.service';
 import { AuthService } from 'src/app/services/auth.service';
 import { LoadingController, ToastController } from '@ionic/angular';
+import { FCM } from '@ionic-native/fcm/ngx';
 
 @Component({
   selector: 'app-pedidos',
@@ -21,13 +22,18 @@ export class PedidosPage implements OnInit {
     private pedidosService: PedidosService, 
     private authService: AuthService,
     private loadingCtrl: LoadingController,
-    private toastCtrl: ToastController) { 
+    private toastCtrl: ToastController,
+    private fcm: FCM) { 
     this.pedidosSubscription = this.pedidosService.getPedidos().subscribe(data => {
       this.pedidos = data;
     });
   }
 
-  ngOnInit() { }
+  ngOnInit() { 
+    this.fcm.getToken().then(token => {
+      console.log(token);
+    });
+  }
 
   ngOnDestroy(){
     this.pedidosSubscription.unsubscribe();

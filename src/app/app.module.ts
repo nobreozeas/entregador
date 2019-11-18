@@ -14,7 +14,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { Keyboard } from '@ionic-native/keyboard/ngx';
 import { environment } from 'src/environments/environment.prod';
 import { GoogleMaps } from '@ionic-native/google-maps';
-
+import { FCM } from '@ionic-native/fcm/ngx';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -30,6 +30,7 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     StatusBar,
     SplashScreen,
     GoogleMaps,
+    FCM,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     Keyboard
   ],

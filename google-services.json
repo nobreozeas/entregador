@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "717949387485",
+    "firebase_url": "https://entrega-database.firebaseio.com",
+    "project_id": "entrega-database",
+    "storage_bucket": "entrega-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717949387485:android:1f6e06d71a1ebcb4de9134",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717949387485-59if4ash5sjqlt3q6k01v5tsh2ju1icd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhG28HeLGt4VCr3LerPGRWggZIPxm3bxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717949387485-59if4ash5sjqlt3q6k01v5tsh2ju1icd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

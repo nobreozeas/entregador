@@ -2,5 +2,6 @@ export interface User {
     nome?: string;
     email?: string;
     password?: string;
-    isAdmin?: boolean;
+    cnh?: string;
+    cpf?: string;
 }
